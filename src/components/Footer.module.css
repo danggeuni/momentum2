@@ -1,0 +1,172 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  padding: 0 1em;
+  box-sizing: border-box;
+}
+
+.quote {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 2;
+  width: 30%;
+}
+
+.quote:hover .content {
+  transform: translateY(-12px);
+  color: deepskyblue;
+}
+
+.quote:hover .author {
+  transform: translateY(12px);
+  opacity: 1;
+  color: deepskyblue;
+}
+
+.content {
+  display: flex;
+  position: relative;
+  text-align: center;
+  transition: all 300ms ease-in-out;
+  cursor: default;
+  color: white;
+}
+
+.author {
+  position: absolute;
+  margin-left: 0.5em;
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+  cursor: default;
+  color: white;
+}
+
+.description {
+  width: 10%;
+}
+
+.todoContainer {
+  position: relative;
+  width: 10%;
+}
+
+.toggle {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  text-align: end;
+  width: 10%;
+  cursor: pointer;
+  box-sizing: content-box;
+  text-align: end;
+  font-size: 17px;
+  color: white;
+}
+
+.toggle:hover {
+  color: lightblue;
+  transition: color 300ms ease-in-out;
+}
+
+.todoPosition {
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(0);
+  transition: all 300ms ease-in-out;
+}
+
+.todoWrapper {
+  opacity: 1;
+  transform: translateY(-3px);
+  transform: translateX(-10px);
+  width: 300px;
+}
+
+.todoHeader {
+  padding: 1em;
+}
+
+.todoTitle {
+  font-size: 1.25rem;
+  text-align: left;
+  color: white;
+  margin-left: 5px;
+}
+
+.list {
+  overflow-y: scroll;
+  max-height: calc(85vh - 135px);
+  transition: max-height 300ms ease-in-out;
+  margin-left: 15px;
+}
+
+.noList {
+  display: block;
+  text-align: center;
+  padding: 2rem 0;
+  opacity: 1;
+  transition: all 300ms ease-in-out;
+  color: white;
+}
+
+.listInput {
+  width: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+  outline-style: none;
+  color: white;
+  margin-left: 5px;
+}
+
+.block {
+  width: 20px;
+  height: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+.listContainer {
+  display: flex;
+  align-items: center;
+}
+
+.delButton {
+  width: 17px;
+  height: 17px;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: auto;
+  cursor: pointer;
+  fill: white;
+}
+
+.span {
+  color: white;
+  cursor: pointer;
+}
+
+.midLine {
+  text-decoration: line-through;
+  color: gray;
+  transition: all 300ms ease-in-out;
+}
+
+.listarray {
+  display: flex;
+  align-items: center;
+}

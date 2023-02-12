@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+.clock {
+  font-family: "Roboto", sans-serif;
+
+  display: flex;
+  justify-content: center;
+
+  font-size: 9rem;
+  color: white;
+
+  margin: 0 auto 2rem;
+}

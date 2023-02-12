@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.initText {
+  color: white;
+}
+.nameContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  margin: 0 auto;
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+}
+
+.name {
+  font-size: 50px;
+  border: none;
+  border-bottom: 1px solid white;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+}
+
+.name:focus {
+  outline: none;
+}
+
+.hide {
+  display: none;
+}
+
+.containerWrapper {
+  position: relative;
+  text-align: center;
+}
+
+.greetingContainer {
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.logText {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  color: white;
+}
+
+.editButton {
+  top: 0;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  border: none;
+  fill: white;
+}
+
+/* 로그인 후 명기되는 이름 box */
+.logName {
+  font-size: 3rem;
+  outline: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 300ms ease-in-out;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border: none;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+}
+
+.namewrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nameEdit {
+  animation-name: underbar;
+  animation-duration: 3s;
+  border-bottom: 2px solid;
+}
+
+@keyframes underbar {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
